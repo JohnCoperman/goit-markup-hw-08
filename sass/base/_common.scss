@@ -1,0 +1,14 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: $color-onix;
+      background-color: $color-white;
+}
+
+// body.modal-open {
+//       overflow: hidden;
+// }
+.mobile-menu.is-open body {
+      overflow: hidden;
+}

@@ -1,0 +1,81 @@
+.hero {
+      text-align: center;
+
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/teamwork-day-1600-@1x.jpg);
+      background-size: cover;
+      background-position: center;
+      background-color: $dark-theme;
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/teamwork-day-1600-@2x.jpg);
+      }
+
+      margin: auto;
+
+      @media screen and (min-width: $screen-tab) {
+            height: 400px;
+            padding: 118px 0;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/teamwork-day-1600-@1x.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/teamwork-day-1600-@2x.jpg);
+            }
+      }
+
+      @media screen and (min-width: $screen-desktop) {
+            max-width: 1600px;
+            height: 600px;
+            padding: 200px 0;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/teamwork-day-1600-@1x.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/teamwork-day-1600-@2x.jpg);
+            }
+      }
+}
+
+.hero-title {
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      font-size: 26px;
+      line-height: 1.62;
+
+      color: $color-white;
+
+      margin: auto auto $gaps-small;
+
+      @media screen and (min-width: 390px) {
+            width: 360px;
+      }
+
+      @media screen and (min-width: $screen-desktop) {
+            width: 696px;
+            line-height: 1.36;
+            font-size: 44px;
+
+      }
+}
+
+.hero-btn {
+      @extend %btn;
+      @extend %master-btn;
+      @extend %master-btn--design;
+      min-width: 200px;
+
+      // @media screen and (min-width: $screen-desktop) {
+      //       width: 216px;
+      // }
+
+      &:hover,
+      &:focus {
+            @extend %btn--event;
+            background-color: #188CE8;
+      }
+}
