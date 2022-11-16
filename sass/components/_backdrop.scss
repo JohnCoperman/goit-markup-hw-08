@@ -29,6 +29,8 @@
       }
 
       @media screen and (min-width: $screen-tab) {
+            width: 480px;
+
             transform: translate(-50%, -50%) scale(1);
             transition: transform $duration cubic-bezier(.89, .01, .45, .99);
 

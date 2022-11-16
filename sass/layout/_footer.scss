@@ -45,11 +45,13 @@
 
 .adress__list {
       font-style: normal;
-      row-gap: 8px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 9px;
 
-      @media screen and (min-width: $screen-tab) {
-            flex-direction: column;
-      }
+      // @media screen and (min-width: $screen-tab) {
+
+      // }
 
       @media screen and (min-width: $screen-desktop) {
             text-align: left;

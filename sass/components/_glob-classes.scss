@@ -16,9 +16,17 @@
       padding: 0 15px;
       margin: auto;
 
+      @media screen and (min-width: $screen-mobile) {
+            width: 480px;
+      }
+
+      @media screen and (min-width: $screen-tab) {
+            width: 768px;
+      }
+
       @media screen and (min-width: $screen-desktop) {
-            width: auto;
-            max-width: 1200px;
+            // width: auto;
+            width: 1200px;
       }
 
 }

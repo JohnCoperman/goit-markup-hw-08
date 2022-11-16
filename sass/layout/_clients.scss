@@ -2,10 +2,10 @@
       display: flex;
       flex-wrap: wrap;
       gap: $gaps-small;
-      justify-content: center;
+      // justify-content: center;
 
       @media screen and (max-width: $screen-tab) {
-            // justify-content: center;
+            justify-content: center;
       }
 
       @media screen and (min-width: $screen-tab) and (max-width: 1199px) {
@@ -25,7 +25,8 @@
 // }
 
 .clients__item {
-      width: 210px;
+      // width: 210px;
+      width: calc((100% - 2*30px)/2);
       height: 92px;
 
       @media screen and (min-width: $screen-tab) {

@@ -1,5 +1,5 @@
 .features-list {
-
+      // margin: auto;
       justify-content: center;
 
       @media screen and (min-width: $screen-tab) and (max-width: 1199px) {
@@ -12,21 +12,33 @@
       }
 }
 
-// .container__features-list {
-//       margin: auto;
-// }
+.container__features-list {
+      margin: auto;
+}
 
 .features-list__item {
+
+      @media screen and (min-width: 480px) {
+            // width: calc(100% - 30px);
+            // margin: auto;
+      }
+
       @media screen and (max-width: 767px) {
+
+
             &:not(:first-child) {
                   margin-top: $gaps-small;
             }
       }
 
-      @media screen and (min-width: $screen-mobile) and (max-width: 767px) {
-            width: 480px;
-            margin: auto;
-      }
+      // @media screen and (max-width: 767px) {
+      //       text-align: center;
+      // }
+
+      // @media screen and (min-width: $screen-mobile) and (max-width: 767px) {
+      //       width: 480px;
+      // margin: auto;
+      // }
 
       @media screen and (min-width: $screen-tab) {
             width: 345px;
@@ -39,6 +51,8 @@
 }
 
 .features-list__deck {
+
+      // width: 100%;
       height: 120px;
       display: flex;
       align-items: center;
@@ -47,12 +61,20 @@
       background-color: #F5F4FA;
       border-radius: 4px;
 
-      margin-bottom: 30px;
+      // @media screen and (min-width: $screen-mobile) and (max-width: 767px) {
+      //       width: calc(100% - 30px);
+      // }
 }
 
 .features-list__title {
+      margin-top: 30px;
       text-transform: uppercase;
+      font-size: inherit;
       line-height: 1.14;
+
+      @media screen and (max-width: 767px) {
+            text-align: center;
+      }
 }
 
 .features-list__text {
